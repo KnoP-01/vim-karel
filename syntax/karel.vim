@@ -3,6 +3,7 @@
 " Maintainer: Jay Strybis <jay.strybis@gmail.com>
 " URL:        http://github.com/onerobotics/vim-karel
 " License:    MIT
+" Modified: Patrick Knosowski knosowski@graeff.de
 
 if exists("b:current_syntax")
   finish
@@ -64,7 +65,7 @@ hi def link karelFunction    Function
 syn keyword karelClause      EVAL FROM IN WHEN WITH
 hi def link karelClause      Keyword
 
-syn keyword karelConditional IF THEN ELSE ENDIF SELECT ENDSELECT
+syn keyword karelConditional IF THEN ELSE ENDIF SELECT ENDSELECT CASE
 hi def link karelConditional Conditional
 
 syn keyword karelRepeat      WHILE DO ENDWHILE FOR
