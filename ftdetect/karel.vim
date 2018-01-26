@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.kl setf karel
+au BufNewFile,BufRead \c*.kl setf karel
