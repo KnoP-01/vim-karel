@@ -3,7 +3,7 @@
 " Maintainer: Jay Strybis <jay.strybis@gmail.com>
 " URL:        http://github.com/onerobotics/vim-karel
 " License:    MIT
-" Modified: Patrick Knosowski knosowski@graeff.de
+" Modified: Patrick Knosowski knosowski@graeffrobotics.de
 
 if exists("b:current_syntax")
   finish
