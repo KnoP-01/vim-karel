@@ -3,6 +3,9 @@
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeffrobotics.de>
 " Version: 0.0.1
 " Last Change: 09. Apr 2026
+" TODO: - add indent of 2.4.2 User-Defined Data Structures
+"         <name> = STRUCTURE/ENDSTRUCTURE
+"         USING <name> [,<name2>] DO/ENDUSING
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")
