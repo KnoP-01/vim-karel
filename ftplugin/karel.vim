@@ -1,6 +1,7 @@
 " Fanuc Karel file type plugin for Vim
 " Language: KAREL
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeffrobotics.de>
+" Credits:    Kirill Morozov
 " Version: 1.0.0
 " Last Change: 18. Nov 2024
 "
