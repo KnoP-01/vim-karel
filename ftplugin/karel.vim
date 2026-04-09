@@ -2,8 +2,8 @@
 " Language: KAREL
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeffrobotics.de>
 " Credits:    Kirill Morozov
-" Version: 1.0.0
-" Last Change: 18. Nov 2024
+" Version: 1.0.1
+" Last Change: 28. Jan 2026
 "
 " Suggestions of improvement are very welcome. Please email me!
 "
@@ -20,10 +20,17 @@ let s:keepcpo = &cpo
 set cpo&vim
 
 setlocal comments=:--
-setlocal commentstring=--%s
-setlocal suffixesadd+=.kl
-setlocal suffixesadd+=.KL
-let b:undo_ftplugin = "setlocal com< cms< sua<"
+setlocal commentstring=--\ %s
+setlocal suffixesadd+=.kl,.KL
+
+" indent settings
+setlocal softtabstop=2         " 4 spaces per tab key pressed
+setlocal shiftwidth=2          " 4 spaces per indent level
+setlocal expandtab             " use spaces instead of tab
+setlocal shiftround
+setlocal autoindent
+
+let b:undo_ftplugin = "setlocal com< cms< sua< sts< sw< et< sr< ai<"
 
 let &cpo = s:keepcpo
 unlet s:keepcpo
