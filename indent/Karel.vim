@@ -2,10 +2,11 @@
 " Language: Fanuc Karel
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeffrobotics.de>
 " Version: 0.0.1
-" Last Change: 09. Apr 2026
+" Last Change: 15. Apr 2026
 " TODO: - add indent of 2.4.2 User-Defined Data Structures
 "         <name> = STRUCTURE/ENDSTRUCTURE
 "         USING <name> [,<name2>] DO/ENDUSING
+"         FORM ... ENDFORM?
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")
@@ -110,7 +111,7 @@ function s:karelPreNoneBlank(lnum) abort
 
   let nPreNoneBlank = prevnonblank(a:lnum)
 
-  while nPreNoneBlank > 0 && getline(nPreNoneBlank) =~? '\v^\s*(\&\w\+|;|continue>)'
+  while nPreNoneBlank > 0 && getline(nPreNoneBlank) =~? '\v^\s*(\&\w\+|--)'
     " Previous none blank line irrelevant. Look further aback.
     let nPreNoneBlank = prevnonblank(nPreNoneBlank - 1)
   endwhile
