@@ -3,7 +3,7 @@
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeffrobotics.de>
 " Credits:    Kirill Morozov
 " Version: 1.0.1
-" Last Change: 28. Jan 2026
+" Last Change: 17. Apr 2026
 "
 " Suggestions of improvement are very welcome. Please email me!
 "
@@ -21,7 +21,7 @@ set cpo&vim
 
 setlocal comments=:--
 setlocal commentstring=--\ %s
-setlocal suffixesadd+=.kl,.KL
+setlocal suffixesadd+=.kl,.KL,.ls,.LS
 
 " indent settings
 setlocal softtabstop=2         " 4 spaces per tab key pressed
