@@ -3,12 +3,10 @@
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeffrobotics.de>
 " Credits:    Kirill Morozov
 " Version: 1.0.1
-" Last Change: 17. Apr 2026
+" Last Change: 28. May 2026
 "
 " Suggestions of improvement are very welcome. Please email me!
 "
-" ToDo's {{{
-" }}} ToDo's
 
 " Only do this when not done yet for this buffer
 if exists("b:did_ftplugin")
