@@ -1,12 +1,8 @@
 " Vim indent file
 " Language: Fanuc Karel
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeffrobotics.de>
-" Version: 0.0.1
-" Last Change: 15. Apr 2026
-" TODO: - add indent of 2.4.2 User-Defined Data Structures
-"         <name> = STRUCTURE/ENDSTRUCTURE
-"         USING <name> [,<name2>] DO/ENDUSING
-"         FORM ... ENDFORM?
+" Version: 1.0.0
+" Last Change: 28. May 2026
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")
@@ -60,7 +56,7 @@ function GetKarelIndent() abort
 
   " Define add 'shiftwidth' pattern
   let addShiftwidthPattern =           '\v^\s*('
-  let addShiftwidthPattern   ..=               'if>|while>|for>'
+  let addShiftwidthPattern   ..=               'if>|while>|for>|using>|condition>|.*<structure>'
   let addShiftwidthPattern   ..=               '|else>'
   let addShiftwidthPattern   ..=               '|case>'
   let addShiftwidthPattern   ..=               '|repeat>'
@@ -76,7 +72,7 @@ function GetKarelIndent() abort
 
   " Define Subtract 'shiftwidth' pattern
   let subtractShiftwidthPattern =      '\v^\s*('
-  let subtractShiftwidthPattern   ..=          'end(if|while|for)?>'
+  let subtractShiftwidthPattern   ..=          'end(if|while|for|using|condition|structure)?>'
   let subtractShiftwidthPattern   ..=          '|else>'
   let subtractShiftwidthPattern   ..=          '|case>|endselect>'
   let subtractShiftwidthPattern   ..=          '|until>'
