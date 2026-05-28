@@ -14,9 +14,6 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-let s:keepcpo = &cpo
-set cpo&vim
-
 setlocal comments=:--
 setlocal commentstring=--\ %s
 setlocal suffixesadd+=.kl,.KL,.ls,.LS
@@ -29,8 +26,5 @@ setlocal shiftround
 setlocal autoindent
 
 let b:undo_ftplugin = "setlocal com< cms< sua< sts< sw< et< sr< ai<"
-
-let &cpo = s:keepcpo
-unlet s:keepcpo
 
 " vim:sw=2 sts=2 et fdm=marker
