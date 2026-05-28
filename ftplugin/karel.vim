@@ -18,11 +18,4 @@ setlocal comments=:--
 setlocal commentstring=--\ %s
 setlocal suffixesadd+=.kl,.KL,.ls,.LS
 
-" indent settings
-setlocal softtabstop=2         " 4 spaces per tab key pressed
-setlocal shiftwidth=2          " 4 spaces per indent level
-setlocal expandtab             " use spaces instead of tab
-setlocal shiftround
-setlocal autoindent
-
-let b:undo_ftplugin = "setlocal com< cms< sua< sts< sw< et< sr< ai<"
+let b:undo_ftplugin = "setlocal com< cms< sua<"
