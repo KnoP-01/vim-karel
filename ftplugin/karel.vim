@@ -26,5 +26,3 @@ setlocal shiftround
 setlocal autoindent
 
 let b:undo_ftplugin = "setlocal com< cms< sua< sts< sw< et< sr< ai<"
-
-" vim:sw=2 sts=2 et fdm=marker
