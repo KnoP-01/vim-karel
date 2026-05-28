@@ -1,9 +1,9 @@
 " Vim syntax file
-" Language:   KAREL
-" Maintainer: Jay Strybis <jay.strybis@gmail.com>
-" URL:        http://github.com/onerobotics/vim-karel
-" License:    MIT
-" Modified: Patrick Knosowski knosowski@graeffrobotics.de
+" Language:    KAREL
+" Last Change: 2024-11-17
+" Maintainer:  Kirill Morozov <kirill@robotix.pro>
+" Credits:     Jay Strybis for the initial implementation and Patrick Knosowski
+"              for a couple of fixes.
 
 if exists("b:current_syntax")
   finish
@@ -112,6 +112,5 @@ hi def link karelKeyword     Keyword
 " Comments
 syn region karelComment      start="--" end="$"
 hi def link karelComment     Comment
-
 
 let b:current_syntax = "karel"
